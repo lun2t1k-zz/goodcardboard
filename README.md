@@ -1,1 +1,3 @@
 # goodcardboard
+
+Учебный проект GloAcademy
