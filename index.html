@@ -553,20 +553,20 @@
         <script src="slick/slick.min.js"></script>
         <script>
             $(document).ready(function(){
-                $('.production-slider_top').slick({
-                    arrows: false,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
+                $('.production-slider_top').slick(function(){
+                    arrows: false;
+                    slidesToShow: 1;
+                    slidesToScroll: 1;
                     asNavFor: '.production-slider_bottom'
                 });
-                $('.production-slider_bottom').slick({
-                    arrows: true,
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                    focusOnSelect: true,
-                    prevArrow: '<div class="slider-arrow slider-arrow_prod slider-arrow_left"></div>',
-                    nextArrow: '<div class="slider-arrow slider-arrow_prod slider-arrow_right"></div>',
-                    asNavFor: '.production-slider_top',
+                $('.production-slider_bottom').slick(function(){
+                    arrows: true;
+                    slidesToShow: 4;
+                    slidesToScroll: 1;
+                    focusOnSelect: true;
+                    prevArrow: '<div class="slider-arrow slider-arrow_prod slider-arrow_left"></div>';
+                    nextArrow: '<div class="slider-arrow slider-arrow_prod slider-arrow_right"></div>';
+                    asNavFor: '.production-slider_top';
                     responsive: [
                         {
                             breakpoint: 1200,
@@ -582,11 +582,11 @@
                         }
                     ]
                 });
-                $('.feedback-slider').slick({
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    prevArrow: '<div class="slider-arrow slider-arrow_feedback slider-arrow_left"></div>',
-                    nextArrow: '<div class="slider-arrow slider-arrow_feedback slider-arrow_right"></div>',
+                $('.feedback-slider').slick(function(){
+                    slidesToShow: 3;
+                    slidesToScroll: 1;
+                    prevArrow: '<div class="slider-arrow slider-arrow_feedback slider-arrow_left"></div>';
+                    nextArrow: '<div class="slider-arrow slider-arrow_feedback slider-arrow_right"></div>';
                     responsive: [
                         {
                             breakpoint: 1200,
