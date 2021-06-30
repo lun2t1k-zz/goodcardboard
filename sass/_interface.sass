@@ -1,0 +1,118 @@
+.main-container
+    max-width: 940px
+    width: 90%
+    margin: 0 auto
+
+.dark-bg
+    position: relative
+    z-index: 2
+    &::before
+        content: ''
+        display: block
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0, 0, 0, 0.6)
+        z-index: -1
+
+.section
+    &-title
+        color: #313131
+        margin-top: 0
+        font-size: 27px
+        font-weight: 700
+        text-transform: uppercase
+        text-align: center
+        margin-bottom: 29px
+        &::after
+            content: ''
+            display: block
+            height: 6px
+            background: url(../img/line.png) center no-repeat
+            margin-top: 12px
+.button
+    font-size: 14px
+    font-weight: 400
+    background-color: $active-color
+    border: 1px solid transparent
+    color: $text-color-light
+    padding: 11px 19px
+    border-radius: 5px
+    outline: 0 none !important
+    &:hover
+        background-color: lighten($active-color, 5)
+        transition: background-color 0.5s ease
+        cursor: pointer
+    &-o
+        background-color: transparent
+        color: $text-color-dark
+        border: 1px solid rgba(#373737, 0.5)
+        &:hover
+            background-color: lighten($active-color, 5)
+            transition: background-color 0.5s ease
+            color: #fff
+            border: 1px solid transparent
+            cursor: pointer
+    img
+        vertical-align: middle
+    &_big
+        width: 159px
+        height: 56px
+        padding-top: 18px
+        padding-bottom: 18px
+        vertical-align: middle
+
+.form__input
+    color: #373737
+    font-size: 14px
+    font-weight: 300
+
+.wow
+    visibility: hidden
+
+.slider-arrow
+    position: absolute
+    top: 0
+    z-index: 99
+    height: 100%
+    width: 22px
+    &_prod
+        border: 1px solid $active-color
+    &:hover
+        cursor: pointer
+    &_right
+        right: 0
+        background: #fff url(../img/arrow-right.png) center no-repeat
+        &:hover
+            background: $active-color url(../img/arrow-right_active.png) center no-repeat
+    &_left
+        left: 0
+        background: #fff url(../img/arrow-left.png) center no-repeat
+        &:hover
+            background: $active-color url(../img/arrow-left_active.png) center no-repeat
+
+@media screen and ( max-width: 768px )
+    .section
+        &-title
+            font-size: 22px
+            margin-bottom: 15px
+            &::after
+                display: none
+
+    .slider-arrow
+        height: 100%
+        width: 22px
+        &_prod
+            border: 1px solid $active-color
+        &_right
+            right: 0
+            background: #fff url(../img/arrow-right.png) center no-repeat
+            &:hover
+                background: $active-color url(../img/arrow-right_active.png) center no-repeat
+        &_left
+            left: 0
+            background: #fff url(../img/arrow-left.png) center no-repeat
+            &:hover
+                background: $active-color url(../img/arrow-left_active.png) center no-repeat

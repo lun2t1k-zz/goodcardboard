@@ -1,0 +1,59 @@
+.numbers
+  text-align: center
+  margin-bottom: 37px
+  &-block
+    display: flex
+    flex-direction: column
+    vertical-align: top
+    &__title
+      font-size: 29px
+      font-weight: 900
+      color: $active-color
+      sup
+        font-size: 18px
+    &__text
+      font-size: 16px
+      font-weight: 400
+      color: $text-color-dark
+
+.features
+  background-color: $bg-color-light
+  color: $text-color-dark
+  padding-top: 49px
+  padding-bottom: 55px
+  &-block
+    display: flex
+    align-items: center
+    height: 85%
+    padding: 28px 19px
+    background-color: #fff
+    margin-bottom: 30px
+    &__img
+      max-width: 57px
+      max-height: 57px
+      flex-basis: 40%
+      margin-right: 9px
+    &__title
+      font-size: 15px
+      font-weight: 700
+      margin-bottom: 5px
+    &-descr
+      font-size: 14px
+      font-weight: 30000
+
+@media screen and (max-width: 768px)
+  .numbers
+    margin-bottom: 23px
+    &-block
+      margin-bottom: 24px
+      &__title
+        font-size: 30px
+      &__text
+        font-size: 14px
+
+  .features
+    padding-top: 24px
+    padding-bottom: 40px
+    &-block
+      height: 95%
+      padding: 22px 16px
