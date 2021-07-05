@@ -78,20 +78,27 @@
     z-index: 99
     height: 100%
     width: 22px
+    &_feedback
+        &_right
+            right: 0
+            background: transparent url(../img/arrow-feedback-right.png) center no-repeat
+        &_left
+            left: 0
+            background: transparent url(../img/arrow-feedback-left.png) center no-repeat
     &_prod
         border: 1px solid $active-color
+        &_right
+            right: 0
+            background: #fff url(../img/arrow-right.png) center no-repeat
+            &:hover
+                background: $active-color url(../img/arrow-right_active.png) center no-repeat
+        &_left
+            left: 0
+            background: #fff url(../img/arrow-left.png) center no-repeat
+            &:hover
+                background: $active-color url(../img/arrow-left_active.png) center no-repeat
     &:hover
         cursor: pointer
-    &_right
-        right: 0
-        background: #fff url(../img/arrow-right.png) center no-repeat
-        &:hover
-            background: $active-color url(../img/arrow-right_active.png) center no-repeat
-    &_left
-        left: 0
-        background: #fff url(../img/arrow-left.png) center no-repeat
-        &:hover
-            background: $active-color url(../img/arrow-left_active.png) center no-repeat
 
 @media screen and ( max-width: 768px )
     .section
@@ -102,17 +109,15 @@
                 display: none
 
     .slider-arrow
-        height: 100%
+        height: 30%
         width: 22px
         &_prod
-            border: 1px solid $active-color
-        &_right
-            right: 0
-            background: #fff url(../img/arrow-right.png) center no-repeat
-            &:hover
+            &_right
                 background: $active-color url(../img/arrow-right_active.png) center no-repeat
-        &_left
-            left: 0
-            background: #fff url(../img/arrow-left.png) center no-repeat
-            &:hover
+            &_left
+                background: $active-color url(../img/arrow-left_active.png) center no-repeat
+        &_feedback
+            &_right
+                background: $active-color url(../img/arrow-right_active.png) center no-repeat
+            &_left
                 background: $active-color url(../img/arrow-left_active.png) center no-repeat

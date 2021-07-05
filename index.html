@@ -52,7 +52,7 @@
                         <a class="menu-item-link" href="#feedback">отзывы</a>
                     </li>
                     <li class="menu-item">
-                        <a class="menu-item-link" href="#">контакты</a>
+                        <a class="menu-item-link" href="#contacts">контакты</a>
                     </li>
                 </ul>
             </div>
@@ -74,11 +74,11 @@
                         <div class="header-contacts">
                             <div class="header-contacts__phones">
                                 <div class="header-contacts__phone header-contacts__phone-first">
-                                    <a href="#" type="tel">8 (347) <span class="phone-bold">271-54-28</span></a>
+                                    <a href="#">8 (347) <span class="phone-bold">271-54-28</span></a>
                                 </div>
                                 
                                 <div class="header-contacts__phone">
-                                    <a href="#" type="tel">8 (937) <span class="phone-bold">363-30-00</span></a>
+                                    <a href="#">8 (937) <span class="phone-bold">363-30-00</span></a>
                                 </div>
                             </div>
 
@@ -317,7 +317,7 @@
                 </h2>
                 <div class="offer-form">
                     <form action="#">
-                        <label class="offer-form__label" for="">Введите ваш номер телефона:</label>
+                        <label class="offer-form__label" for="#">Введите ваш номер телефона:</label>
                         <input class="form__input offer-form__input" type="tel" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ">
                         <button class="button button_big offer-form__button" type="submit">Оставить заявку!</button>
                     </form>
@@ -484,12 +484,10 @@
         </section>
         <!-- /.feedback -->
 
-        <div class="contacts wow fadeInUp">
+        <div class="contacts wow fadeInUp" id="contacts">
             <div id="map" class="map"></div>
-            <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A54f520051bf6a4c93b4b782c2318c073aefc3fd1bbe469f2aac0b3103a40f500&amp;width=100%25&amp;height=550&amp;lang=ru_RU&amp;scroll=false"></script> -->
             
             <div class="contacts-block wow fadeInUp">
-                <div class="main-container">
                     <h2 class="contacts-title">контакты</h2>
 
                     <div class="contacts-block__address contacts-block__text">
@@ -513,7 +511,6 @@
                         <span class="contacts-block__title">Е-mail</span>
                         urals.karton@gmail.com
                     </div>
-                </div>
             </div>
         </div>
         <!-- /.contacts -->
@@ -540,7 +537,7 @@
                                 Получите индивидуальное предложение
                                 <span>на производство и поставку изделий</span>
                     
-                                <label for="phone" class="popup-form__label">Введите ваш номер телефона:</label>
+                                <label for="#" class="popup-form__label">Введите ваш номер телефона:</label>
                     
                                 <div class="input-group">
                                     <input type="tel" class="form__input popup-form__input" name="phone" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ"
@@ -609,8 +606,8 @@
                 slidesToShow: 4,
                 slidesToScroll: 1,
                 focusOnSelect: true,
-                prevArrow: '<div class="slider-arrow slider-arrow_prod slider-arrow_left"></div>',
-                nextArrow: '<div class="slider-arrow slider-arrow_prod slider-arrow_right"></div>',
+                prevArrow: '<div class="slider-arrow slider-arrow_prod slider-arrow_prod_left"></div>',
+                nextArrow: '<div class="slider-arrow slider-arrow_prod slider-arrow_prod_right"></div>',
                 asNavFor: '.production-slider_top',
                 responsive: [
                     {
@@ -630,8 +627,8 @@
             $('.feedback-slider').slick({
                 slidesToShow: 3,
                 slidesToScroll: 1,
-                prevArrow: '<div class="slider-arrow slider-arrow_feedback slider-arrow_left"></div>',
-                nextArrow: '<div class="slider-arrow slider-arrow_feedback slider-arrow_right"></div>',
+                prevArrow: '<div class="slider-arrow slider-arrow_feedback slider-arrow_feedback_left"></div>',
+                nextArrow: '<div class="slider-arrow slider-arrow_feedback slider-arrow_feedback_right"></div>',
                 responsive: [
                     {
                         breakpoint: 1200,

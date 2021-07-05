@@ -7,7 +7,7 @@
     top: 10%
     left: 10%
     background-color: #fff
-    z-index: 99
+    z-index: 80
     padding-top: 33px
     padding-bottom: 39px
     padding-left: 62px
@@ -33,6 +33,10 @@
         left: 30px
         z-index: 100
     &__phone
+      margin-bottom: 14px
+      .phone-first
+        display: block
+        margin-bottom: 5px
       &::before
         content: ''
         position: absolute
@@ -48,7 +52,7 @@
         width: 17px
         height: 25px
         background: url(../img/contacts/mail-icon.png) center no-repeat
-        top: 335px
+        top: 320px
         left: 30px
 
 .map
@@ -74,7 +78,6 @@
       padding-left: 0
       padding-right: 0
       padding-bottom: 9px
-      &__title
       &__text
         text-align: center
         font-size: 14px
@@ -83,10 +86,6 @@
         &::before
           display: none
       &__phone
-        margin-bottom: 15px
-        .phone-first
-          display: block
-          margin-bottom: 5px
         &::before
           display: none
       &__mail
